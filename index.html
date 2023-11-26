@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pesquisa</title>
+</head>
+<body>
+<div class="cabeca">
+<h1 id="title">Formulario de Pesquisa</h1>
+<p id="description">Formulario de informações basicas para pessoas interessadas em Tecnologia</p>
+</div>
+<form id="survey-form">
+  <label id="name-label">
+    <p>Nome</p>
+  <input placeholder="Insira seu nome" required type="text" id="name">
+  </label>
+
+  <label id="email-label">
+    <p>Email</p>
+  <input placeholder="Insira seu email" required type="email" id="email">
+  </label>
+
+  <label id="number-label">
+    <p>Idade</p>
+  <input placeholder="Insira sua idade" id="number" type="number" min="15" max="70">
+  </label>
+
+<div class="divisor"></div>
+
+  <label class="job"> 
+    <p id="firstp">Qual das opções descreve sua função atual?</p>
+  <select id="dropdown">
+    <option value="estudo">estudando</option>
+    <option valie="trabalho">trabalhando</option>
+  </select>
+  </label>
+
+  <label>
+    <p>Tem interrese no trabalho exterior?</p>
+  <input type="radio" value="sim" name="interrese"><span>Sim</span>
+  <input type="radio" value="nao" name="interrese"><span>Não</span>
+  <input type="radio" value="talvez" name="interrese"><span>Talvez</span>
+  </label>
+  
+  <label>
+    <p>Quais linguagens você tem interrese?</p>
+    <span>Python</span><input type="checkbox" value="python">
+    <span>PHP</span><input type="checkbox" value="php">
+    <span>Ruby</span><input type="checkbox" value="ruby">
+    <span>Java</span><input type="checkbox" value="java">
+    <span>JavaScript</span><input type="checkbox" value="js">
+  </label>
+
+  <label>
+    <p>Tem algum comentario?</p>
+    <textarea></textarea>
+  </label>
+  <input id="submit" type="submit" value="Enviar"/>
+</form>
+
+</body>
+</html>
